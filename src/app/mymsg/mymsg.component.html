@@ -1,0 +1,19 @@
+<div 
+*ngFor="let item of this.message.message;let i = index "
+class="direct-chat-msg right">
+<ng-container>
+
+<div class="direct-chat-info clearfix">
+    <span class="direct-chat-name pull-right">Khalid</span>
+</div>
+
+<img class="direct-chat-img" src="https://img.icons8.com/office/36/000000/person-female.png" alt="message user image">
+
+<div class="direct-chat-text">
+    {{this.message.message[i]}}
+</div>
+
+</ng-container>
+    
+
+</div>
