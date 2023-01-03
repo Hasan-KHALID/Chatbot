@@ -1,6 +1,6 @@
-<div
+<div *ngFor="let item of this.message.message;let i = index "
 class="direct-chat-msg">
-<ng-container >
+<ng-container *ngIf="i%2> 0">
 <div class="direct-chat-info clearfix">
     <span class="direct-chat-name pull-left">@BOT</span>
 </div>
@@ -9,7 +9,7 @@ class="direct-chat-msg">
     alt="message user image">
 
 <div class="direct-chat-text">
-    {{this.botMessage}}
+    {{this.message.message[i]}}
 </div>
 </ng-container>
     

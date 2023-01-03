@@ -9,9 +9,13 @@ export class MessageService {
 
   constructor() { }
 
-  addMessage(message:string){
+ 
+
+  async addMessage(message:string){
     this.message.push(message)
-    this.message.length
+    this.message.push('how can I help you')
+    
+    
   
   }
 }
